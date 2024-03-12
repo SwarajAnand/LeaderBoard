@@ -1,0 +1,113 @@
+:root{
+    /* --backgroundMain: #137A79; */
+    /* --allCols: #2A8687; */
+    /* --first: #70AEAF; */
+    /* --second: #59A0A0; */
+    /* --third: #419394; */
+    /* --text: #E2ECE8; */
+
+    --backgroundMain: #845EC2;
+    --allCols: #A178DF;
+    --first: #FACCFF;
+    --second: #DCB0FF;
+    --third: #BE93FD;
+    --text: #613E9E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--backgroundMain);
+    color: black;
+    font-weight: 400;
+    font-family: "Assistant", sans-serif;
+
+}
+
+#container{
+    width: 78%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    padding: 25px;
+    color: white;
+}
+
+.form {
+    display: flex;
+    gap: 20px;
+}
+
+input, button{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    border: none;
+    margin-bottom: 32px;
+}
+
+.delete, .add, .sub {
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.delete:hover, .sub:hover, .add:hover {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover{
+    background-color: var(--second);
+    color: var(--text);
+}
+
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+
+#mainContainer > div:nth-of-type(1) {
+    background-color: var(--first);
+}
+
+#mainContainer > div:nth-of-type(2) {
+    background-color: var(--second);
+}
+
+#mainContainer > div:nth-of-type(3) {
+    background-color: var(--third);
+}
+
+#mainContainer *{
+    width: 100%;
+}
+
+section{
+    display: flex;
+}
+
+#mainContainer div{
+    padding: 15px 0;
+    display: flex;
+    background-color: var(--allCols);
+    border-radius: 10px;
+    align-items: center;
+}
