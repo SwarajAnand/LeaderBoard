@@ -42,10 +42,6 @@ btn.addEventListener("click", (e) => {
 
   console.log(typeof pScore.value);
 
-  if (typeof pScore.value == "string") {
-    alert("Score should be number");
-    return;
-  }
   let obj = {
     firstName: fName.value,
     lastName: lName.value,
